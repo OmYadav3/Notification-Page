@@ -36,15 +36,15 @@ const handleMarkAsRead = (index) =>{
 
   return (
     <div>
-      <div className="main border-2 my-20 sm:mx-80 mx-4">
-        <div className="heading flex sm:justify-around sm:gap-[24rem] gap-[17rem] py-4">
+      <div className="main border-2 lg:my-20 lg:mx-80  ">
+        <div className="heading flex justify-between px-4 py-4">
           <div className="flex gap-4 items-center">
-            <div className="font-bold sm:text-3xl pl-2 ">Notifications</div>
-            <div className="cursor-pointer bg-cyan-900 text-white px-[0.6rem] py-[0.1rem]">
+            <div className="font-bold sm:text-3xl text-sm sm:pl-2 ">Notifications</div>
+            <div className="cursor-pointer bg-cyan-900 text-white px-[0.6rem] py-[0.1rem]  sm:text-sm text-[0.5rem]">
               {notifications.unReadMeassages.length}
             </div>
           </div>
-          <div className="cursor-pointer " onClick={handleMarkAllRead}>Mark all as read</div>
+          <div className="cursor-pointer  sm:text-sm text-[0.6rem]" onClick={handleMarkAllRead}>Mark all as read</div>
         </div>
         
         <Notificationbox 
